@@ -67,7 +67,7 @@ public class CloudantPropertiesBean {
 		this._database = database;
 	}
 	
-	public String getDatase(){
+	public String getDatabase(){
 		return this._database;
 	}
 	
