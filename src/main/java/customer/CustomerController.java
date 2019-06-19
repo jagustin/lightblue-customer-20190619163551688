@@ -75,7 +75,8 @@ public class CustomerController {
             final List<Customer> customers = cloudant.findByIndex("{ \"selector\":{ \"username\" : \""+username+"\" } }", Customer.class );
             return ResponseEntity.ok(customers);
         }catch(Exception e){
-
+			logger.error(e.getMessage(), e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
         // return  ResponseEntity.ok("[{\"user\":\"foo\"}]");
     }
@@ -93,7 +94,7 @@ public class CustomerController {
 
         }catch(Exception e){
             logger.error(e.getMessage(),e);
-            ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
         // return ResponseEntity.ok("[{\"user\":\"foo\"}]");
         
