@@ -14,7 +14,7 @@ public class CloudantPropertiesBean {
 	private String _port;
 	private String _database;
 	
-	public setUsername(username){
+	public void setUsername(username){
 		this._username = username;
 	}
 	public String getUsername(){
