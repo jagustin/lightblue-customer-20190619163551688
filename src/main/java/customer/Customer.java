@@ -44,7 +44,7 @@ public class Customer{
 		return this._password;
 	}
 	public void setFirstName(String firstName){
-		this._firstName = firsName;
+		this._firstName = firstName;
 	}
     
     public String getFirstname(){

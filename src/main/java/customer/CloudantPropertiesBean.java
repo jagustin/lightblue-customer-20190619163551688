@@ -6,13 +6,24 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix="spring.cloudant")
 public class CloudantPropertiesBean {
-	
+	private String _id;
 	private String _username;
 	private String _password;
 	private String _host;
 	private String _protocol;
 	private String _port;
 	private String _database;
+	
+	
+	public void setCustomerId(String id){
+		this._id = id;
+	}
+	
+	public String getCustomerId(){
+		return this._id;
+		
+	}
+	
 	
 	public void setUsername(String username){
 		this._username = username;

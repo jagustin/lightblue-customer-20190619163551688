@@ -48,7 +48,7 @@ public class CustomerController {
     private CloudantPropertiesBean cloudantProperties;
 
     @PostConstruct
-    private void init() throws MailformedUrlException{
+    private void init() throws MalformedURLException{
         try{
             String cldUrl = cloudantProperties.getProtocol() + "://" + cloudantProperties.getHost() + ":" + cloudantProperties.getPort();
             logger.info("Connecting to cloudant at :"+cldUrl);
@@ -118,7 +118,7 @@ public class CustomerController {
      * @return transaction status
      */
     @RequestMapping(value = "/customer", method = RequestMethod.POST, consumes = "application/json")
-    ResponseEntity<?> create(@RequestHeader Map<String, String> headers) {
+    ResponseEntity<?> create(@RequestHeader Map<String, String> headers,  @RequestBody Customer payload) {
         try{
             if(payload.getCustomerId() != null && cloudant.contains(payload.getCustomerId())){
                 return ResponseEntity.badRequest().body("Id "+payload.getCustomerId() + " already exists");
