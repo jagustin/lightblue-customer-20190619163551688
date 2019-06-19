@@ -108,7 +108,7 @@ public class CustomerController {
             final Customer cust = cloudant.find(Customer.class, id);
             return ResponseEntity.ok(cust);
         }catch(NoDocumentException e){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Customer with ID "+id + "not found")
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Customer with ID "+id + "not found");
         }
         // return ResponseEntity.ok("{\"user\":\"foo\"}");
     }
@@ -139,7 +139,7 @@ public class CustomerController {
             }
         }catch(Exception ex){
             logger.error("Error creating customer: "+ex);
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error creating customer: "+ex.toString())
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error creating customer: "+ex.toString());
         }
         // return ResponseEntity.ok("{\"user\":\"foo\"}");
     }

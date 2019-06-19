@@ -18,7 +18,7 @@ public class CloudantPropertiesBean {
 		this._username = username;
 	}
 	public String getUsername(){
-		return this._username
+		return this._username;
 	}
 	
 	public void setPassword(String password){
