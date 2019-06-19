@@ -15,7 +15,7 @@ public class Customer{
 		this._id = id
 	}
 	
-	public getCustomerId(){
+	public String getCustomerId(){
 		return this._id;
 		
 	}
@@ -24,7 +24,7 @@ public class Customer{
 		this._rev = rev;
 	}
 	
-	public getRev(){
+	public String getRev(){
 		return this._rev;
 	}
 	
@@ -32,7 +32,7 @@ public class Customer{
 		this._username = username;
 	}
 	
-	public getUsername(){
+	public String getUsername(){
 		return this._username;
 	}
 	
@@ -40,14 +40,14 @@ public class Customer{
 		this._password = password;
 	}
 	
-	public getPassword(){
+	public String getPassword(){
 		return this._password;
 	}
 	public setFirstName(firstName){
 		this._firstName = firsName;
 	}
     
-    public getFirstname(){
+    public String getFirstname(){
         return this._firstName;
     }
 
@@ -55,7 +55,7 @@ public class Customer{
         this._lastName = lastName;
     }
 
-    public getLastName(){
+    public String getLastName(){
         return this._lastName;
     }
 
@@ -63,7 +63,7 @@ public class Customer{
         this._email = email;
     }
 
-    public getEmail(){
+    public String getEmail(){
         return this._email;
     }
 
@@ -71,7 +71,7 @@ public class Customer{
         this._imageUrl = imageUrl;
     }
 
-    public getImageUrl(){
+    public String getImageUrl(){
         return this._imageUrl;
     }
 
