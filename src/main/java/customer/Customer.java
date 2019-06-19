@@ -11,7 +11,7 @@ public class Customer{
 	private String _email;
 	private String _imageUrl;
 	
-	public void setCustomerId(id){
+	public void setCustomerId(String id){
 		this._id = id;
 	}
 	
@@ -20,7 +20,7 @@ public class Customer{
 		
 	}
 	
-	public void setRev(rev){
+	public void setRev(String rev){
 		this._rev = rev;
 	}
 	
@@ -28,7 +28,7 @@ public class Customer{
 		return this._rev;
 	}
 	
-	public void setUsername(username){
+	public void setUsername(String username){
 		this._username = username;
 	}
 	
@@ -36,14 +36,14 @@ public class Customer{
 		return this._username;
 	}
 	
-	public void setPassword(password){
+	public void setPassword(String password){
 		this._password = password;
 	}
 	
 	public String getPassword(){
 		return this._password;
 	}
-	public void setFirstName(firstName){
+	public void setFirstName(String firstName){
 		this._firstName = firsName;
 	}
     
@@ -51,7 +51,7 @@ public class Customer{
         return this._firstName;
     }
 
-    public void setLastName(lastName){
+    public void setLastName(String lastName){
         this._lastName = lastName;
     }
 
@@ -59,7 +59,7 @@ public class Customer{
         return this._lastName;
     }
 
-    public void setEmail(email){
+    public void setEmail(String email){
         this._email = email;
     }
 
@@ -67,7 +67,7 @@ public class Customer{
         return this._email;
     }
 
-    public void setImageUrl(imageUrl){
+    public void setImageUrl(String imageUrl){
         this._imageUrl = imageUrl;
     }
 

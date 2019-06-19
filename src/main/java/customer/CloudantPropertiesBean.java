@@ -14,21 +14,21 @@ public class CloudantPropertiesBean {
 	private String _port;
 	private String _database;
 	
-	public void setUsername(username){
+	public void setUsername(String username){
 		this._username = username;
 	}
 	public String getUsername(){
 		return this._username
 	}
 	
-	public void setPassword(password){
+	public void setPassword(String password){
 		this._password = password;
 	}
 	public  String getPassword(){
 		return this._password;
 	}
 	
-	public void setHost(host){
+	public void setHost(String host){
 		this._host = host;
 	}
 	
@@ -36,7 +36,7 @@ public class CloudantPropertiesBean {
 		return this._host;
 	}
 	
-	public void setProtocal(protocol){
+	public void setProtocal(String protocol){
 		this._protocol = protocol;
 	}
 	
@@ -44,7 +44,7 @@ public class CloudantPropertiesBean {
 		return this._protocol;
 	}
 	
-	public void setPort(port){
+	public void setPort(String port){
 		this._port = port;
 	}
 	
@@ -52,7 +52,7 @@ public class CloudantPropertiesBean {
 		return this._port;
 	}
 	
-	public void setDatabase(database){
+	public void setDatabase(String database){
 		this._database = database;
 	}
 	
